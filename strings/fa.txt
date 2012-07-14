@@ -1,0 +1,706 @@
+﻿# Translations for Persian (فارسی) (fa) language
+
+# * Lines starting with # are comments (such as this).
+# * This file must be in UTF-8 encoding. Make sure you use a proper
+#   text editor (Notepad++ or Notepad2) and set UTF-8 encoding.
+# * For lines containing several variables (such as %s, %d or %u), the
+#   variables must remain in that exact order in the translation.
+
+Lang: fa Persian (فارسی)
+
+Contributor: Adham Beyki (odinay@gmail.com)
+Contributor: Mardi Az Pansad Dastgah Artesh
+Contributor: Ali Nayeri
+Contributor: dawoodiran@gmail.com
+Contributor: DR. dawood fakhim
+Contributor: داود فخیم
+
+&About
+&درباره
+
+&Actual Size\tCtrl+1
+&ابعاد اصلی‌\tCtrl+1
+
+&All selected pages
+همه صفحات انتخاب شده
+
+&Back\tAlt+Left Arrow
+&قبلی\tAlt+Left Arrow
+
+&Book View\tCtrl+8
+نمایش بشکل کتاب
+
+&Close\tCtrl+W
+&بستن\tCtrl+W
+
+&Copy Selection
+رونوشت از انتخاب شده
+
+&Copy Selection\tCtrl+C
+&رونوشت مورد منتخب
+
+&Don't ask me again
+& دوباره از من نپرس
+
+&Even pages only
+فقط صفحات زوج
+
+&Facing\tCtrl+7
+دو صفحه ایی
+
+&File
+&فايل
+
+&Find what:
+&:جستجو برای
+
+&First Page\tHome
+&صفحه نخست\tHome
+
+&Fit pages to printable area
+صفحات را متناسب با صفحه چاپ بکن
+
+&Go To
+&برو به
+
+&Go to page:
+&:برو به صفحه
+
+&Help
+&راهنما
+
+&Last Page\tEnd
+&صفحه آخر\tEnd
+
+&Magnification:
+&درشت نمایی
+
+&Manual
+&کتابچه راهنما در اینترنت
+
+&Match case
+&با توجه به قالب حروف
+
+&Next Page\tRight Arrow
+&صفحه بعدی\t->
+
+&No
+&خیر
+
+&No, thanks
+&نه، متشکرم
+
+&Odd pages only
+فقط صفحات فرد
+
+&Open Document
+باز کردن سند
+
+&Open...\tCtrl+O
+&باز کردن...\tCtrl+O
+
+&Options...
+&گزینه ها
+
+&Password:
+&کلمه عبور
+
+&Pin Document
+ثابت نمودن سند
+
+&Previous Page\tLeft Arrow
+&صفحه قبلی\t<-
+
+&Print...
+چاپ کردن000
+
+&Print...\tCtrl+P
+&چاپ...\tCtrl+P
+
+&Print... (denied)
+&چاپ(ممنوع).. 
+
+&Remember the password for this document
+رمز عبور این سند را بخاطر داشته باش
+
+&Remember these settings for each document
+&این تنظیمات را برای هر سند بخاطر بسپار
+
+&Remove Document
+سند را حذف کن
+
+&Save As...
+ذخیره کردن بنام000
+
+&Save As...\tCtrl+S
+&...ذخیره بعنوان\tCtrl+S
+
+&Settings
+&تنظیمات
+
+&Shrink pages to printable area (if necessary)
+صفحات را برای متناسب کردن با صفحه چاپ کوچک کن(اگر ضروری است)
+
+&Single Page\tCtrl+6
+تک صفحه ای
+
+&Skip this version
+&از این نسخه چشم پوشی کن
+
+&Use original page sizes
+اندازه صفحه اصلی را بکار بگیر
+
+&View
+&نمايش
+
+&Yes
+بلی
+
+&Zoom
+&تغییر ابعاد نمایش
+
+(of %d)
+(%d از)
+
+(page %s)
+(صفحه 5%s)
+
+About SumatraPDF
+SumatraPDF درباره برنامه
+
+Add Favorite
+افزودن به دلخواه
+
+Add page %s to favorites
+افزودن صفحه %sبه دلخواهها
+
+Add page %s to favorites with (optional) name:
+افزودن صفحه به %sدلخواهها با نام:
+
+Add to favorites
+افزودن به دلخواهها
+
+Advanced
+امکانات پیشرفته
+
+All files
+تمام فایلها
+
+All supported documents
+همه اسناد قابل پشتیبانی
+
+Application:
+:نرم‌افزار
+
+Associate with PDF files?
+قرار بدهیم ؟ PDF ایا این برنامه را نمایشگر همیشگی فایل های
+
+Attachment: %s
+پیوست:%s
+
+Author:
+:مولف
+
+Automatic
+خودکار
+
+Automatically check for &updates
+جستجو خودکار برای نسخه جدید
+
+Book View
+نمایش کتابی‌
+
+Book&marks\tF12
+نشان یادگاری سرکتاب\tF12
+
+Bookmark Shortcuts
+میانبر به نشانه گذاری ها
+
+Bookmark shortcut to page %s of %s
+میانبر به نشانه گذاری صفحه %s از %s
+
+Bookmarks
+نشانه گذاریها
+
+Bytes
+بایتها
+
+CHM documents
+CHM اسناد
+
+Can't connect to the Internet (error %#x).
+ناتوانی در اتصال به اینترنت(خطای %#x)
+
+Cancel
+لغو
+
+Cannot print this file
+این فایل قابل به چاپ نیست
+
+Cannot start inverse search command. Please check the command line in the settings.
+.جستجو معکوس قابل اجرا نیست. لطفا تنظیمات خط فرمان را بازبینی کنید
+
+Change Language
+تغییر زبان (Change Language)
+
+Check for &Updates
+چک کردن نسخه تازه تر
+
+Comic books
+کتابهای فکاهی
+
+Continuous
+نمايش پيوسته
+
+Continuous Book View
+نمایش کتابی‌ پیوسته
+
+Continuous Facing
+نمایش دو صفحه‌ای پیوسته
+
+Contribute Translation
+در ترجمه این برنامه کمک کنید
+
+Copy &Image
+رونوشت و عکس
+
+Copy &Link Address
+رونوشت و لینک آدرس
+
+Copy Co&mment
+رونوشت و توضیح
+
+Copying text was denied (copying as image only)
+رونوشت گیری ممنوع (کپی فقط بعنوان عکس)
+
+Copyright:
+حق نشر
+
+Could not obtain Printer properties
+قادر به تعیین خصوصیات چاپ نمیباشم
+
+Couldn't initialize printer
+متأسفانه چاپگر منتخب در دسترس نیست
+
+Couldn't render the page
+متأسفانه صفحه قابل نمایش نیست
+
+Created:
+:بوجود آمده
+
+Current file
+همین فایل
+
+Custom &Zoom...\tCtrl+Y
+ابعاد نمایش مخصوص\tCtrl+Y
+
+Default &Layout:
+:نمایش پیش فرض
+
+Default &Zoom:
+:ابعاد نمایش
+
+Default PDF reader can't be changed in portable mode
+باشد PDF نسخه همراه برنامه نمی‌تواند مجری استاندارد فایلهای
+
+Denied Permissions:
+:دسترسی ممنوع
+
+DjVu documents
+DjVu اسناد
+
+Document Properties
+ویژگیهای سند
+
+Download
+بارگیری
+
+E&xit\tCtrl+Q
+خروج\tCtrl+Q
+
+EPUB ebooks
+EPUB اسناد
+
+Enter password
+کلمه عبور را وارد کنید
+
+Enter password for %s
+را وارد کنید %s کلمه عبور برای
+
+Enter the command-line to invoke when you double-click on the PDF document:
+خط دستور را برای فرخوانی هنگام کلیک روی فایل pdf  را وارد کن
+
+Error loading %s
+نمایش خطا %s
+
+F&avorites
+دلخواهها
+
+F&orward\tAlt+Right Arrow
+جلو\tAlt+Right Arrow
+
+F&ullscreen\tCtrl+Shift+L
+تمام‌صفحه\tCtrl+Shift+L
+
+Facing
+نمایش دو صفحه‌ای
+
+Failed to save a file
+ذخيره کردن فايل با مشکل روبرو شد
+
+Favorites
+دلخواهها
+
+File %s not found
+فایل %s پیدا نشد
+
+File Size:
+:حجم فایل
+
+File:
+:فايل
+
+Fin&d...\tCtrl+F
+...جستجو\tCtrl+F
+
+Find
+جستجو
+
+Find Next
+جستجو روبه جلو
+
+Find Previous
+جستجو روبه عقب
+
+Find:
+جستجو:
+
+Fit &Content\tCtrl+3
+متناسب کردن &محتویات\tCtrl+3
+
+Fit &Page\tCtrl+0
+به بزرگی پنجره\tCtrl+0
+
+Fit &Width\tCtrl+2
+به بزرگی پهنای پنجره\tCtrl+2
+
+Fit Content
+متناسب کردن محتویات
+
+Fit Page
+به بزرگی پنجره
+
+Fit Width
+به بزرگی پهنای پنجره
+
+Fit Width and Show Pages Continuously
+متناسب کردن پهنا و نمایش بدنبال هم صفحات
+
+Fit a Single Page
+متناسب کردن یک صفحه
+
+Fonts:
+قلمها
+
+Formatting the book... %d pages
+قالب بندی کتاب 000%d صفحات
+
+Found text at page %s
+پیدا شد %s متن در صفحه
+
+Found text at page %s (again)
+پیدا کردن متن در صفحه%s (دوباره)
+
+Frequently Read
+سوالات رایج
+
+GB
+GB
+
+Go to page
+برو به صفحه
+
+Hide frequently read
+پنهان کردن مطالعه شده  مکرر
+
+Hint: Use the F3 key for finding again
+استفاده کنید F3 اشاره: برای جستجو مجدد از کلید
+
+Image files (*.%s)
+(*.%s)فایلهای تصویری
+
+KB
+KB
+
+Loading file %s...
+نمایش فایل %s....
+
+MB
+MB
+
+Make SumatraPDF default application for PDF files?
+قرار بدهیم؟ PDF ایا این برنامه را مجری استاندارد فایل های
+
+Make SumatraPDF my default PDF reader
+PDF بعنوان مرورگر اصلی‌ اسناد SumatraPDF انتخاب
+
+Match Case
+متناسب با مورد
+
+Mobi documents
+Mobi اسناد
+
+Modified:
+:اصلاح شده
+
+New version %s is available. Download new version?
+موجود می‌باشد. آیا می‌خواهید آن را بارگیری کنید؟ (%s) نسخه تازه
+
+Next Page
+صفحه بعدی
+
+No matches were found
+مورد مرتبطی یافت نشد
+
+No result found around line %u in file %s
+هیچ نتیجه ای در خط %u در فایل %s یافت نشد
+
+No synchronization file found
+فایل همگام سازی موجود نیست
+
+No synchronization info at this position
+هیچ اصلاعاتی در ین محل همگام نشد
+
+Number of Pages:
+شماره صفحات
+
+OK
+قبول
+
+Open
+باز کردن
+
+Open a document...
+باز کردن سند....
+
+Open in &Adobe Reader
+Adobe Reader باز کردن در
+
+Open in &Foxit Reader
+Foxit Reader باز کردن در
+
+Open in Microsoft HTML Help
+Microsoft HTML Help باز کردن در
+
+Open in Microsoft XPS-Viewer
+Microsoft XPS-Viewer باز کردن در
+
+Open in PDF-XChange
+PDF-XChange باز کردن در
+
+P&roperties
+خصوصیات
+
+P&roperties\tCtrl+D
+...ویزگیها\tCtrl+D
+
+PDF Document
+PDF سند
+
+PDF Producer:
+:PDF برنامه مبدل
+
+PDF Version:
+:PDF نسخه
+
+PDF documents
+PDF اسناد
+
+Pa&ge...\tCtrl+G
+...صفحه\tCtrl+G
+
+Page %s
+صفحه %s
+
+Page Size:
+:ابعاد صفحه
+
+Page number %u inexistant
+موجود نیست %u صفحه
+
+Page scaling
+اندازه گیری صفحه
+
+Page:
+صفحه:
+
+Please wait - rendering...
+... لطفا صبر کنید
+
+Postscript documents
+ضمیه اسناد
+
+Pr&esentation\tCtrl+L
+نمایش\tCtrl+L
+
+Previous Page
+صفحه قبلی
+
+Print
+چاپ
+
+Print range
+محدوده چاپ
+
+Printer with given name doesn't exist
+چاپگر با نام داده شده وجود ندارد
+
+Printing is still in progress. Abort and start over?
+در حال چاپ کردن .انصراف و شروع مجدد؟
+
+Printing page %d of %d...
+چاپ کردن از صفحه %d از %d
+
+Printing problem.
+مشکل در چاپ
+
+Remember &opened files
+فایلهای باز شده را بخاطر بسپار
+
+Remove from favorites
+حذف از دلخواه ها
+
+Remove page %s from favorites
+حذف صفحه %s از دلخواه ها
+
+Replace document &colors with Windows color scheme
+جایگزینی سند و رنگها با تم رنگ ویندوز
+
+Rotate &Left\tCtrl+Shift+-
+چرخاندن به چپ\tCtrl+Shift+-
+
+Rotate &Right\tCtrl+Shift++
+چرخاندن به راست\tCtrl+Shift++
+
+Save As
+ذخیره بنام
+
+Save S&hortcut...\tCtrl+Shift+S
+...\tCtrl+Shift+Sذخیره میانبر
+
+Searching %d of %d...
+... %d از %d در حال جستجو
+
+Select &All
+انتخاب همه
+
+Select &All\tCtrl+A
+انتخاب همه\tCtrl+A
+
+Select content with Ctrl+left mouse button
+و دکمه سمت چپ موس انتخاب کنید Ctrl متن مورد نظر را با
+
+Send by &E-mail...
+... ارسال با پست الکترونیکی‌
+
+Set inverse search command-line
+تنظیم وارانه جستجو
+
+Show &Toolbar
+نمايش نوار ابزار
+
+Show &pages continuously
+نمایش پیوسته صفحات
+
+Show Favorites
+نشان دادن دلخواه ها
+
+Show frequently read
+نشان دادن بیشترین خوانده شده
+
+Show the &bookmarks sidebar when available
+نشان دادن  نوار کناری علامتگذاریها هنگامیکه در دسترس است
+
+Single Page
+نمایش تک صفحه‌ای
+
+Sorry, that shouldn't have happened!\n\nPlease press 'Cancel', if you want to help us fix the cause of this crash.
+متاسفانه انجام نشد!\n\n لطفاً کلید کنسل را بزنید
+
+Source file %s has no synchronization point
+نقاط همگام سازی ندارد %s فایل
+
+Subject:
+:موضوع
+
+SumatraPDF Options
+SumatraPDF گزینه ها
+
+SumatraPDF Update
+بروز رسانی SumatraPDF
+
+SumatraPDF crashed
+SumatraPDF خراب شد
+
+SumatraPDF is your default PDF reader
+شماست PDF مرورگر اصلی SumatraPDF
+
+SumatraPDF should now be your default PDF reader
+شماست PDF اکنون مرورگر اصلی SumatraPDF
+
+Synchronization file cannot be opened
+فایل همگام سازی باز نمی‌شود
+
+Text documents
+سند متنی
+
+Title:
+:عنوان
+
+Unknown source file (%s)
+نامعلوم است (%s) فایل منبع
+
+View
+نمايش
+
+Visit &Website
+بازديد از وب‌سايت
+
+Warning
+هشدار
+
+XPS documents
+XPS اسناد
+
+You have the latest version.
+.نسخه شما تازه‌ترین نسخه می‌باشد
+
+You have version %s
+شما نسخه %s را دارید
+
+Zoom
+ابعاد نمایش
+
+Zoom In
+بزرگ نمایی
+
+Zoom Out
+کوچک نمایی
+
+Zoom factor
+ضریب ابعاد نمایش
+
+[Changes detected; refreshing] %s
+%s [تغییرات شناسایی شد]
+
+copying text
+در حل رونوش متن
+
+printing document
+در حل چاپ سند
+
+# Untranslated:
+#Failed to rename the file!
+#Re&name...\tF2
+#Rename To
+

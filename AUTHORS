@@ -1,0 +1,49 @@
+﻿SumatraPDF contains code by:
+
+* Alexander Klenin
+* Củ Văn Chuối (mrchuoi at gmail.com)
+* David Lopez
+* Danilo Roascio
+* Krzysztof J. Kowalczyk  (http://blog.kowalczyk.info)
+* Ludo Brands
+* Matthew Wilcoxson (matthew.wilcoxson at gmail.com)
+* Nathan Jhaveri
+* Peter Astrand
+* Robert Liu
+* Robert Prouse (rprouse at gmail.com)
+* Simon Bünzli (zeniko at gmail.com)
+* Tom Clegg
+* vadmium at gmail.com
+* Vasily Fomin (vasili.fomin at gmail.com)
+* Victor Kozyakin
+* William Blum (william.blum at gmail.com)
+
+Most code under src is licensed as GPL v3 (see COPYING) with the main
+exception of code in src/utils and src/mui which has a BSD license
+(see COPYING.BSD).
+
+Icons by Zenon, Sonke Tesch, George Georgiou, Robert Hegner,
+FAMFAMFAM and Yusuke Kamiyamane.
+
+Translations by various translators (see strings/*.txt)
+
+External projects are by their various authors:
+
+Project        License                        Website
+-----------------------------------------------------------------------------------------
+MuPDF          mupdf/COPYING           <GPL>  http://mupdf.com/
+FreeType       ext/freetype2/FTL.txt          http://www.freetype.org/
+OpenJPEG       ext/openjpeg/LICENSE    <BSD>  http://www.openjpeg.org/
+jbig2dec       ext/jbig2dec/COPYING    <GPL>  http://jbig2dec.sf.net/
+libjpeg-turbo  ext/.../README-turbo.txt<BSD>  http://libjpeg-turbo.virtualgl.org/
+zlib           ext/zlib/zlib.h                http://www.zlib.net/
+SyncTeX        <unknown>                      http://itexmac.sourceforge.net/SyncTeX.html
+bzip2          ext/bzip2/LICENSE              http://bzip.org/
+UnRAR          ext/unrar/license.txt          http://www.rarlab.com/
+DjVuLibre      ext/libdjvu/COPYRIGHT   <GPL>  http://djvu.sourceforge.net/
+CHMLIB         ext/CHMLib/COPYING     <LGPL>  http://www.jedrea.com/chmlib/
+msinttypes     src/utils/inttypes.h    <BSD>  http://code.google.com/p/msinttypes/
+NPAPI          src/browserplugin/npapi <MPL>  http://code.google.com/p/npapi-sdk/
+ezgdi          mupdf/pdf/pdf_ft_tools.c<GPL>  http://code.google.com/p/ezgdi/
+
+Fugue Icons    CC BY 3.0                      http://p.yusukekamiyamane.com/
