@@ -79,6 +79,7 @@ static MenuDef menuDefView[] = {
     { SEP_ITEM,                             0,                          0 },
     { _TRN("Book&marks\tF12"),              IDM_VIEW_BOOKMARKS,         0 },
     { _TRN("Show &Toolbar"),                IDM_VIEW_SHOW_HIDE_TOOLBAR, 0 },
+    { _TRN("Show &Menubar"),				IDM_VIEW_SHOW_HIDE_MENUBAR, 0 },
     { SEP_ITEM,                             0,                          MF_REQ_ALLOW_COPY },
     { _TRN("Select &All\tCtrl+A"),          IDM_SELECT_ALL,             MF_REQ_ALLOW_COPY },
     { _TRN("&Copy Selection\tCtrl+C"),      IDM_COPY_SELECTION,         MF_REQ_ALLOW_COPY },
@@ -373,6 +374,7 @@ void MenuUpdateStateForWindow(WindowInfo* win) {
 
     win::menu::SetChecked(win->menu, IDM_FAV_TOGGLE, gGlobalPrefs.favVisible);
     win::menu::SetChecked(win->menu, IDM_VIEW_SHOW_HIDE_TOOLBAR, gGlobalPrefs.toolbarVisible);
+    win::menu::SetChecked(win->menu, IDM_VIEW_SHOW_HIDE_MENUBAR, gGlobalPrefs.menubarVisible);
     MenuUpdateDisplayMode(win);
     MenuUpdateZoom(win);
 
@@ -641,4 +643,18 @@ void UpdateMenu(EbookWindow *win, HMENU m)
     UINT id = GetMenuItemID(m, 0);
     if (id == menuDefFile[0].id)
         RebuildFileMenuForEbookUI(m);
+}
+
+void ShowOrHideMenubarGlobally()
+{
+    for (size_t i = 0; i < gWindows.Count(); i++) {
+        WindowInfo *win = gWindows.At(i);
+        if (gGlobalPrefs.menubarVisible) {
+            SetMenu(win->hwndFrame, win->menu);
+        } else {
+            SetMenu(win->hwndFrame, NULL);
+        }
+        ClientRect rect(win->hwndFrame);
+        SendMessage(win->hwndFrame, WM_SIZE, 0, MAKELONG(rect.dx, rect.dy));
+    }
 }

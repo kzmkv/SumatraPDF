@@ -691,4 +691,5 @@ prebieha tlač dokumentu
 #Re&name...\tF2
 #Rename To
 #Replace document &colors with Windows color scheme
+#Show &Menubar
 

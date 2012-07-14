@@ -707,3 +707,6 @@ Text kopieren verweigert
 printing document
 Dokument drucken verweigert
 
+# Untranslated:
+#Show &Menubar
+

@@ -100,6 +100,7 @@ void  AdvanceFocus(WindowInfo* win);
 bool  WindowInfoStillValid(WindowInfo *win);
 void  ChangeLanguage(const char *langName);
 void  ShowOrHideToolbarGlobally();
+void  ShowOrHideMenubarGlobally();
 void  UpdateDocumentColors();
 void  UpdateCurrentFileDisplayStateForWin(SumatraWindow& win);
 bool  FrameOnKeydown(WindowInfo* win, WPARAM key, LPARAM lparam, bool inTextfield=false);

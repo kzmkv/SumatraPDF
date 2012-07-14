@@ -168,6 +168,7 @@ static StrVec                       gAllowedFileTypes;
 
 static void UpdateUITextForLanguage();
 static void UpdateToolbarAndScrollbarState(WindowInfo& win);
+static void ShowOrHideMenubar(WindowInfo& win);
 static void EnterFullscreen(WindowInfo& win, bool presentation=false);
 static void ExitFullscreen(WindowInfo& win);
 static LRESULT CALLBACK WndProcCanvas(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
@@ -781,7 +782,7 @@ static void RebuildMenuBarForWindow(WindowInfo *win)
 {
     HMENU oldMenu = win->menu;
     win->menu = BuildMenu(win);
-    if (!win->presentation && !win->fullScreen)
+    if (!win->presentation && !win->fullScreen && gGlobalPrefs.menubarVisible)
         SetMenu(win->hwndFrame, win->menu);
     DestroyMenu(oldMenu);
 }
@@ -1152,7 +1153,8 @@ static WindowInfo* CreateWindowInfo()
 
     assert(!win->menu);
     win->menu = BuildMenu(win);
-    SetMenu(win->hwndFrame, win->menu);
+    if (gGlobalPrefs.menubarVisible)
+        SetMenu(win->hwndFrame, win->menu);
 
     ShowWindow(win->hwndCanvas, SW_SHOW);
     UpdateWindow(win->hwndCanvas);
@@ -3147,6 +3149,12 @@ static void OnMenuViewShowHideToolbar()
     ShowOrHideToolbarGlobally();
 }
 
+static void OnMenuViewShowHideMenubar()
+{
+    gGlobalPrefs.menubarVisible = !gGlobalPrefs.menubarVisible;
+    ShowOrHideMenubarGlobally();
+}
+
 void OnMenuSettings(HWND hwnd)
 {
     if (!HasPermission(Perm_SavePreferences)) return;
@@ -3343,7 +3351,8 @@ static void ExitFullscreen(WindowInfo& win)
 
     if (gGlobalPrefs.toolbarVisible)
         ShowWindow(win.hwndReBar, SW_SHOW);
-    SetMenu(win.hwndFrame, win.menu);
+    if (gGlobalPrefs.menubarVisible)
+        SetMenu(win.hwndFrame, win.menu);
 
     SetWindowLong(win.hwndFrame, GWL_STYLE, win.prevStyle);
     UINT flags = SWP_FRAMECHANGED | SWP_NOZORDER | SWP_NOSIZE | SWP_NOMOVE;
@@ -3677,6 +3686,14 @@ static void UpdateUITextForLanguage()
         // also update the sidebar title at this point
         UpdateSidebarTitles(*win);
     }
+}
+
+static void ShowOrHideMenubar(WindowInfo& win)
+{
+    if (GetMenu(win.hwndFrame))
+        SetMenu(win.hwndFrame, NULL);
+    else
+        SetMenu(win.hwndFrame, win.menu);
 }
 
 // TODO: the layout logic here is similar to what we do in SetSidebarVisibility()
@@ -4557,6 +4574,10 @@ static LRESULT FrameOnCommand(WindowInfo *win, HWND hwnd, UINT msg, WPARAM wPara
             OnMenuViewShowHideToolbar();
             break;
 
+        case IDM_VIEW_SHOW_HIDE_MENUBAR:
+            OnMenuViewShowHideMenubar();
+            break;
+
         case IDM_CHANGE_LANGUAGE:
             OnMenuChangeLanguage(win->hwndFrame);
             break;
@@ -4819,6 +4840,16 @@ static LRESULT CALLBACK WndProcFrame(HWND hwnd, UINT msg, WPARAM wParam, LPARAM 
                 SendMessage(hwnd, WM_COMMAND, IDM_VIEW_BOOKMARKS, 0);
                 return TRUE;
             }
+            return DefWindowProc(hwnd, msg, wParam, lParam);
+
+        case WM_EXITMENULOOP:
+            if (!gGlobalPrefs.menubarVisible)
+                ShowOrHideMenubar(*win);
+            return DefWindowProc(hwnd, msg, wParam, lParam);
+
+        case WM_SYSCOMMAND:
+            if (wParam == SC_KEYMENU && !gGlobalPrefs.menubarVisible)
+                ShowOrHideMenubar(*win);
             return DefWindowProc(hwnd, msg, wParam, lParam);
 
         case WM_CHAR:

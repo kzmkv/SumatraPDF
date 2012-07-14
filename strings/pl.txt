@@ -695,4 +695,5 @@ drukowanie dokumentu
 #Loading file %s...
 #Re&name...\tF2
 #Rename To
+#Show &Menubar
 

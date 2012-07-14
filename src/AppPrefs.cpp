@@ -39,6 +39,7 @@
 // for backwards compatibility the string si "ShowToolbar" and not
 // (more appropriate now) "ToolbarVisible"
 #define TOOLBAR_VISIBLE_STR         "ShowToolbar"
+#define MENUBAR_VISIBLE_STR			"ShowMenubar"
 #define PDF_ASSOCIATE_DONT_ASK_STR  "PdfAssociateDontAskAgain"
 #define PDF_ASSOCIATE_ASSOCIATE_STR "PdfAssociateShouldAssociate"
 #define UI_LANGUAGE_STR             "UILanguage"
@@ -91,6 +92,7 @@ SerializableGlobalPrefs gGlobalPrefs = {
     false, // bool globalPrefsOnly
     DEFAULT_LANGUAGE, // const char *currentLanguage
     true, // bool toolbarVisible
+    true, // bool menubarVisible
     false, // bool favVisible
     false, // bool pdfAssociateDontAskAgain
     false, // bool pdfAssociateShouldAssociate
@@ -140,6 +142,7 @@ static BencDict* SerializeGlobalPrefs(SerializableGlobalPrefs& globalPrefs)
         return NULL;
 
     prefs->Add(TOOLBAR_VISIBLE_STR, globalPrefs.toolbarVisible);
+    prefs->Add(MENUBAR_VISIBLE_STR, globalPrefs.menubarVisible);
     prefs->Add(TOC_VISIBLE_STR, globalPrefs.tocVisible);
     prefs->Add(FAV_VISIBLE_STR, globalPrefs.favVisible);
 
@@ -466,6 +469,7 @@ static void DeserializePrefs(const char *prefsTxt, SerializableGlobalPrefs& glob
         goto Exit;
 
     Retrieve(global, TOOLBAR_VISIBLE_STR, globalPrefs.toolbarVisible);
+    Retrieve(global, MENUBAR_VISIBLE_STR, globalPrefs.menubarVisible);
     Retrieve(global, TOC_VISIBLE_STR, globalPrefs.tocVisible);
     Retrieve(global, FAV_VISIBLE_STR, globalPrefs.favVisible);
 
@@ -716,6 +720,7 @@ bool ReloadPrefs()
 
     const char *currLang = gGlobalPrefs.currentLanguage;
     bool toolbarVisible = gGlobalPrefs.toolbarVisible;
+    bool menubarVisible = gGlobalPrefs.menubarVisible;
     bool useSysColors = gGlobalPrefs.useSysColors;
 
     FileHistory fileHistory;
