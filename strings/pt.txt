@@ -706,5 +706,7 @@ printing document
 impressão de documento
 
 # Untranslated:
+#Menubar is hidden
+#Menubar will appear after pressing Left Alt or F10.
 #Show &Menubar
 

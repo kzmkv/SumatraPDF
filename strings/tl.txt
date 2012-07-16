@@ -583,6 +583,8 @@ ipini-print ang dokumento
 #Hide frequently read
 #Image files (*.%s)
 #Loading file %s...
+#Menubar is hidden
+#Menubar will appear after pressing Left Alt or F10.
 #Mobi documents
 #Open a document...
 #Page %s

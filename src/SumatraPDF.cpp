@@ -3153,6 +3153,9 @@ static void OnMenuViewShowHideMenubar()
 {
     gGlobalPrefs.menubarVisible = !gGlobalPrefs.menubarVisible;
     ShowOrHideMenubarGlobally();
+    if (!gGlobalPrefs.menubarVisible)
+        MessageBox(NULL, _TR("Menubar will appear after pressing Left Alt or F10."),
+        _TR("Menubar is hidden"), MB_ICONINFORMATION | MB_OK | (IsUIRightToLeft() ? MB_RTLREADING : 0));
 }
 
 void OnMenuSettings(HWND hwnd)
